@@ -1,0 +1,27 @@
+.preLoader{
+    font-family: 'Rubik One', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: -4px -4px 0px #ff0101;
+    background: repeating-linear-gradient(45deg, #e72828, #e72828 1px, white 2px, white 3px);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    margin-top: 20%;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    list-style: none;
+   padding: 10px;
+}
+
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100%;
+}

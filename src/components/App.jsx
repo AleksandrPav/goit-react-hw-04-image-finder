@@ -10,12 +10,15 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 
-class App extends Component {
 
-  KEY_PIXABAY = '28107487-df53024f81d649718d09de179';
+
+
+class App extends Component {
   state = {
     searchValue: '',
   };
+
+ 
 
   handleSearch = searchValue => {
     this.setState({ searchValue });
@@ -29,8 +32,8 @@ class App extends Component {
         />
         <ImageGallery
           searchValue={this.state.searchValue}
-        />
-        
+          page={this.state.page}
+        />    
        
         <ToastContainer
           autoClose={3000}

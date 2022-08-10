@@ -14,6 +14,7 @@ class Searchbar extends Component {
     }
 
     handleValueChange = (event) => {
+        event.preventDefault();
         this.setState({
             searchValue: event.target.value.toLowerCase()
         })
@@ -34,9 +35,9 @@ class Searchbar extends Component {
         return (
     <header className={css.searchbar}>
     <form className={css.form} onSubmit={this.handleSubmit}>
+    
     <button type="submit" className={css.button}>
-    <FcSearch className={css.searchbar__icon}/>
-    <span className={css.button__label}>Search</span>
+    <span className={css.button__label}><FcSearch className={css.searchbar__icon}/></span>
     </button>
     
     <input
@@ -47,7 +48,7 @@ class Searchbar extends Component {
     onChange={this.handleValueChange}
     autoComplete="off"
     autoFocus
-    placeholder="Search images and photos"/>  
+    placeholder="Пошук картинок та фото"/>  
     </form>
     </header>
         );

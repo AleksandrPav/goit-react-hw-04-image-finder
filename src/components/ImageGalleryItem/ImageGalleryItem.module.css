@@ -1,0 +1,19 @@
+.gallery__item{
+    width: calc(100% / 4 - 20px);
+    height: calc(100% / 4 - 20px);
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.gallery__image{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: opacity .3s ease-in-out;
+}
+
+.gallery__image:hover{
+    opacity: 0.7;
+}
+
