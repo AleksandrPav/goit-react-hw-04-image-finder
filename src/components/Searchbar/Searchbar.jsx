@@ -1,6 +1,8 @@
 import React,{Component} from "react";
 import css from "./Searchbar.module.css";
-import {toast} from "react-toastify";
+import { toast } from "react-toastify";
+import { FcSearch } from "react-icons/fc";
+import PropTypes from 'prop-types';
 
 
 export default class Searchbar extends Component {
@@ -33,23 +35,27 @@ export default class Searchbar extends Component {
         return (
         
       <header className={css.searchbar}>
-  <form className={css.form} onSubmit={handleSubmit}>
-    <button type="submit" className={css.button}>
-      <span className={css.button__label}>Search</span>
-    </button>
+      <form className={css.form} onSubmit={handleSubmit}>
+      
+      <button type="submit" className={css.button}>
+      <span className={css.button__label}><FcSearch className={css.searchbar__icon}/></span>
+      </button>
 
-    <input
+      <input
     className={css.input}
     type="text"
     autoComplete="off"
     autoFocus
-    placeholder="Search images and photos"
+    placeholder="Пошук картинок та фото"
     value={search}
-    onChange={handleValueChange}
-    
-    />
-  </form>
-</header>
+    onChange={handleValueChange}/>
+    </form>
+    </header>
     );
   }
+}
+
+Searchbar.propTypes = {
+  handleSearch: PropTypes.func.isRequired,
+  search: PropTypes.string
 }

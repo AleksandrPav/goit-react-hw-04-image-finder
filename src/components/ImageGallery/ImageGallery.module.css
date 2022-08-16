@@ -1,0 +1,11 @@
+.ImageGallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 50px auto 25px auto;
+    padding: 0;
+    list-style: none;
+}

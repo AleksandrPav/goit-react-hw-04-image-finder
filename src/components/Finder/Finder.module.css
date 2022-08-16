@@ -1,8 +1,7 @@
-.App{
+.finder{
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: #010101;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
 }

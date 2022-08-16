@@ -1,0 +1,18 @@
+.ImageGalleryItem{
+    width: calc(100% / 4 - 20px);
+    height: calc(100% / 4 - 20px);
+    margin: 5px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.ImageGalleryItemImage {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: opacity .3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.ImageGalleryItemImage:hover {
+    opacity: .5;
+}
