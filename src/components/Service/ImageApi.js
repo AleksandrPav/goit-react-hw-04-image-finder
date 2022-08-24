@@ -5,7 +5,7 @@ const OPTION = '}&image_type=photo&orientation=horizontal&per_page=12';
 
 
 
-function fetchImage(search, page) {
+export default function fetchImage(search= '', page = 1) {
   return fetch(
     BASE_URL + API_KEY + `&q=${search}` + OPTION + `&page=${page}`
   ).then(response => {
@@ -16,9 +16,7 @@ function fetchImage(search, page) {
   });
 }
 
-const api = { fetchImage };
 
-export default api;
 
 // const ImageApi = {
 //     getImages: (perPage, page, search) => {

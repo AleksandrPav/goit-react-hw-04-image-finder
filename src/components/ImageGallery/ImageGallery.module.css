@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 .preLoader{
     font-family: 'Rubik One', sans-serif;
     font-size: 50px;
@@ -10,15 +10,14 @@
     text-align: center;
     margin-top: 20%;
 }
-.gallery{
-=======
+
 .ImageGallery{
->>>>>>> 09d6505d4230b9b7a6e3fcec575abe59bdcdde0e
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-<<<<<<< HEAD
+
     margin-top: 20px;
     list-style: none;
    padding: 10px;
@@ -30,11 +29,4 @@
     align-items: center;
     margin-bottom: 100%;
 }
-=======
-    width: 100%;
-    height: 100%;
-    margin: 50px auto 25px auto;
-    padding: 0;
-    list-style: none;
-}
->>>>>>> 09d6505d4230b9b7a6e3fcec575abe59bdcdde0e
+

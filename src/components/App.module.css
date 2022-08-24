@@ -1,13 +1,27 @@
-<<<<<<< HEAD
-.container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    color: #010101 ;
-=======
+
 .App{
     background: linear-gradient(to right, #8e9eab, #eef2f3);
->>>>>>> 09d6505d4230b9b7a6e3fcec575abe59bdcdde0e
+    height: 100%;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+
+}
+
+.error{
+    color: rgb(36, 30, 30);
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 1em;
+    text-align: center;
+}
+
+.finder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
