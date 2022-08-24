@@ -1,13 +1,20 @@
+<<<<<<< HEAD
 import css from './App.module.css';
 import React, { Component } from 'react';
 import Searchbar from './Searchbar/Searchbar';
 import ImageGallery from './ImageGallery/ImageGallery';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+=======
+
+import Finder from "../components/Finder/Finder";
+import css from "./App.module.css";
+>>>>>>> 09d6505d4230b9b7a6e3fcec575abe59bdcdde0e
 
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -48,3 +55,13 @@ class App extends Component {
 
 
 export default App;
+=======
+export const App = () => {
+  return (
+    <div className={css.App} >
+      <Finder
+      />
+    </div>
+  );
+};
+>>>>>>> 09d6505d4230b9b7a6e3fcec575abe59bdcdde0e
